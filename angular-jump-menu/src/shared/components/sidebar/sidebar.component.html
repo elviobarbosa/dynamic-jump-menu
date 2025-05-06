@@ -1,0 +1,7 @@
+<ul>
+  @for (section of sections(); track section.id) {
+  <li>
+    <a (click)="scrollToSection(section.id); $event.preventDefault()">{{section.title}}</a>
+  </li>
+  }
+</ul>

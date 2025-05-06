@@ -23,9 +23,9 @@ const sections = Array.from({ length: 30 }, (_, index) => ({
 export default function Home() {
   return (
     <SectionProvider>
-      <div className="flex">
+      <div className="grid grid-cols-[20%_auto] gap-4">
         <Sidebar />
-        <div className="flex-1 p-4">
+        <div>
           {sections.map((section) => (
             <RegisterSection
               key={section.id}

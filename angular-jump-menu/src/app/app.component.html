@@ -1,0 +1,9 @@
+<div class="container">
+  <app-sidebar [sectionValues]="sections()" />
+  <div>
+    @for (section of sectionsMock; track section.id) {
+    <app-section registerSection [sectionId]="section.id" (sectionRegistered)="registerSection($event)"
+      [sectionInfo]="section" />
+    }
+  </div>
+</div>

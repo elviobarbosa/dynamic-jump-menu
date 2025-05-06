@@ -17,7 +17,7 @@ export function Sidebar() {
 
   return (
     <aside>
-      <ul>
+      <ul className="fixed">
         {visibleSections.map((section) => (
           <li key={section.id}>
             <button onClick={() => scrollToSection(section.ref)}>
